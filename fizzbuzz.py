@@ -12,7 +12,7 @@ def fizzbuzz(n):
     return answer
 
 
-# Refactored ------------------------------------
+# Refactored ------------------------------------ have I made it more complex?
 
 def is_multiple_three(n):
     return n % 3 == 0
@@ -26,7 +26,14 @@ def is_fizzbuzz(n):
 def fizzbuzz_refactored(n):
     answer = []
     for x in range(1, n + 1):
-        continue
+        if is_fizzbuzz(x):
+            answer.append("FizzBuzz")
+        elif is_multiple_five(x):
+            answer.append("Buzz")
+        elif is_multiple_three(x):
+            answer.append("Fizz")
+        else:
+            answer.append(x)
     return answer
 
 
