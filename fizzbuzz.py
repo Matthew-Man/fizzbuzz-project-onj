@@ -11,4 +11,8 @@ def fizzbuzz(n):
             answer.append(x)
     return answer
 
+
+def fizzbuzz_refactored(n):
+    return [1]
+
 print(fizzbuzz(16))
