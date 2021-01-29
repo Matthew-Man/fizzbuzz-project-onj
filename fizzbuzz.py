@@ -12,7 +12,17 @@ def fizzbuzz(n):
     return answer
 
 
+# Refactored ------------------------------------
+
+def is_multiple_three(n):
+    return n % 3 == 0
+
+def is_multiple_five(n):
+    return n % 5 == 0
+
 def fizzbuzz_refactored(n):
-    return [1]
+    answer = []
+    return answer
+
 
 print(fizzbuzz(16))
