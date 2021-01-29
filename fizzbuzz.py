@@ -20,8 +20,13 @@ def is_multiple_three(n):
 def is_multiple_five(n):
     return n % 5 == 0
 
+def is_fizzbuzz(n):
+    return is_multiple_three(n) and is_multiple_five(n)
+
 def fizzbuzz_refactored(n):
     answer = []
+    for x in range(1, n + 1):
+        continue
     return answer
 
 
